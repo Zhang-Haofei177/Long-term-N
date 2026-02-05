@@ -46,13 +46,13 @@ ggsave(plot = p, filename = "AMF_ProcessImportance_EachNitrogen.pdf", device = "
 a <- read.csv("AMF_1.ProcessImportance_EachGroup.csv", header = T)
 group <- read.csv("group.csv", header = T, row.names = 1)
 colnames(group)[3] <- "Group"
-treat_name <- c("Original", "Rootzone", "Rhizosphere", "Root", "Nodule")
+treat_name <- c("Rootzone", "Rhizosphere", "Root", "Nodule")
 a2 <- a[a$Group %in% treat_name, ]
 a2 <- a2[3:8]
 
 a2_l <- melt(a2, id.vars = c("Group"), variable.name = "Assembly Process")
 a2_l$`Assembly Process` <- factor(a2_l$`Assembly Process`, levels = c("HoS", "HeS", "DL", "HD", "DR"))
-a2_l$Group <- factor(a2_l$Group, levels = c("Original", "Rootzone", "Rhizosphere", "Root", "Nodule"))
+a2_l$Group <- factor(a2_l$Group, levels = c("Rootzone", "Rhizosphere", "Root", "Nodule"),labels = c("RZS","RS","RE","NE"))
 unique(a2_l$Group)
 
 # Set color palette for each assembly process
@@ -65,7 +65,7 @@ color_assembly_Process <- c(
 )
 
 p <- ggplot(a2_l, aes(Group, value * 100, fill = `Assembly Process`)) +
-  geom_rect(aes(xmin = 0, xmax = 6, ymin = -Inf, ymax = Inf), fill = "#f0f7ff", alpha = 1) +
+  geom_rect(aes(xmin = 0, xmax = 5, ymin = -Inf, ymax = Inf), fill = "#f0f7ff", alpha = 1) +
   geom_col(position = 'stack', width = 0.6) +
   scale_fill_manual(values = color_assembly_Process) +
   labs(x = '', y = "Relative importance (%)", fill = 'Assembly Process') +
@@ -79,7 +79,7 @@ p <- ggplot(a2_l, aes(Group, value * 100, fill = `Assembly Process`)) +
     text = element_text(family = "serif")
   )
 p
-ggsave(plot = p, filename = "AMF_ProcessImportance_EachNiche.pdf", device = "pdf", dpi = 300, width = 2.5, height = 3)
+ggsave(plot = p, filename = "AMF_ProcessImportance_EachNiche.pdf", device = "pdf", dpi = 300, width = 2, height = 3)
 
 ######################## Rhizobia Process Importance Plot ###########
 ######################## Nitrogen ###########
@@ -125,13 +125,13 @@ ggsave(plot = p, filename = "Rhi_ProcessImportance_EachNitrogen.pdf", device = "
 a <- read.csv("Rhi_1.ProcessImportance_EachGroup.csv", header = T)
 group <- read.csv("group.csv", header = T, row.names = 1)
 colnames(group)[3] <- "Group"
-treat_name <- c("Original", "Rootzone", "Rhizosphere", "Root", "Nodule")
+treat_name <- c("Rootzone", "Rhizosphere", "Root", "Nodule")
 a2 <- a[a$Group %in% treat_name, ]
 a2 <- a2[3:8]
 
 a2_l <- melt(a2, id.vars = c("Group"), variable.name = "Assembly Process")
 a2_l$`Assembly Process` <- factor(a2_l$`Assembly Process`, levels = c("HoS", "HeS", "DL", "HD", "DR"))
-a2_l$Group <- factor(a2_l$Group, levels = c("Original", "Rootzone", "Rhizosphere", "Root", "Nodule"))
+a2_l$Group <- factor(a2_l$Group, levels = c("Rootzone", "Rhizosphere", "Root", "Nodule"),labels = c("RZS","RS","RE","NE"))
 unique(a2_l$Group)
 
 # Set color palette for each assembly process
@@ -144,7 +144,7 @@ color_assembly_Process <- c(
 )
 
 p <- ggplot(a2_l, aes(Group, value * 100, fill = `Assembly Process`)) +
-  geom_rect(aes(xmin = 0, xmax = 6, ymin = -Inf, ymax = Inf), fill = "#f0f7ff", alpha = 1) +
+  geom_rect(aes(xmin = 0, xmax = 5, ymin = -Inf, ymax = Inf), fill = "#f0f7ff", alpha = 1) +
   geom_col(position = 'stack', width = 0.6) +
   scale_fill_manual(values = color_assembly_Process) +
   labs(x = '', y = "Relative importance (%)", fill = 'Assembly Process') +
@@ -158,7 +158,7 @@ p <- ggplot(a2_l, aes(Group, value * 100, fill = `Assembly Process`)) +
     text = element_text(family = "serif")
   )
 p
-ggsave(plot = p, filename = "Rhi_ProcessImportance_EachNiche.pdf", device = "pdf", dpi = 300, width = 2.5, height = 3)
+ggsave(plot = p, filename = "Rhi_ProcessImportance_EachNiche.pdf", device = "pdf", dpi = 300, width = 2, height = 3)
 
 ######################### Stacked Bar Charts #####################################
 ############### AMF Stacked Bar Charts ##################################################
