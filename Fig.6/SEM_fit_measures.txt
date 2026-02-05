@@ -1,0 +1,92 @@
+lavaan 0.6-21 ended normally after 1 iteration
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        28
+
+  Number of observations                            80
+
+Model Test User Model:
+                                                      
+  Test statistic                                 5.708
+  Degrees of freedom                                 5
+  P-value (Chi-square)                           0.336
+
+Model Test Baseline Model:
+
+  Test statistic                               240.786
+  Degrees of freedom                                27
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.997
+  Tucker-Lewis Index (TLI)                       0.982
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)               -560.532
+  Loglikelihood unrestricted model (H1)       -557.678
+                                                      
+  Akaike (AIC)                                1177.064
+  Bayesian (BIC)                              1243.761
+  Sample-size adjusted Bayesian (SABIC)       1155.467
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.042
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.165
+  P-value H_0: RMSEA <= 0.050                    0.449
+  P-value H_0: RMSEA >= 0.080                    0.401
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.031
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Regressions:
+                        Estimate  Std.Err  z-value  P(>|z|)
+  emf_deltaNutrition ~                                     
+    richness_AMF          -0.136    0.108   -1.259    0.208
+    richness_RHI           0.258    0.128    2.013    0.044
+    Nitrogen              -0.485    0.103   -4.731    0.000
+    emf_Nitrifictn         0.147    0.120    1.230    0.219
+    emf_Denitrfctn         0.089    0.101    0.880    0.379
+    emf_Nfix               0.284    0.119    2.387    0.017
+  emf_Nitrification ~                                      
+    richness_AMF          -0.187    0.101   -1.856    0.063
+    richness_RHI           0.277    0.090    3.091    0.002
+    Nitrogen              -0.018    0.081   -0.225    0.822
+    NicheSelc             -0.673    0.108   -6.216    0.000
+  emf_Denitrification ~                                    
+    richness_AMF           0.159    0.138    1.155    0.248
+    richness_RHI          -0.050    0.122   -0.409    0.683
+    Nitrogen               0.041    0.110    0.372    0.710
+    NicheSelc             -0.318    0.148   -2.152    0.031
+  emf_Nfix ~                                               
+    richness_AMF           0.256    0.112    2.286    0.022
+    richness_RHI          -0.362    0.099   -3.641    0.000
+    Nitrogen              -0.107    0.089   -1.197    0.231
+    NicheSelc              0.495    0.120    4.126    0.000
+  richness_AMF ~                                           
+    Nitrogen              -0.179    0.083   -2.171    0.030
+    NicheSelc             -0.650    0.083   -7.867    0.000
+  richness_RHI ~                                           
+    Nitrogen               0.281    0.093    3.026    0.002
+    NicheSelc             -0.481    0.093   -5.181    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+   .emf_deltaNtrtn    0.694    0.110    6.325    0.000
+   .emf_Nitrifictn    0.439    0.069    6.325    0.000
+   .emf_Denitrfctn    0.816    0.129    6.325    0.000
+   .emf_Nfix          0.538    0.085    6.325    0.000
+   .richness_AMF      0.539    0.085    6.325    0.000
+   .richness_RHI      0.681    0.108    6.325    0.000
+

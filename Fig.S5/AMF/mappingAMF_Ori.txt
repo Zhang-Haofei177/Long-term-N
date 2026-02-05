@@ -1,0 +1,101 @@
+#SampleID	SOURCE_ENV	Env	SourceSink
+N0.O.1	Original	Original	sink
+N0.O.2	Original	Original	sink
+N0.O.3	Original	Original	sink
+N0.O.4	Original	Original	sink
+N0.O.5	Original	Original	sink
+N2.O.1	Original	Original	sink
+N2.O.2	Original	Original	sink
+N2.O.3	Original	Original	sink
+N2.O.4	Original	Original	sink
+N2.O.5	Original	Original	sink
+N4.O.1	Original	Original	sink
+N4.O.2	Original	Original	sink
+N4.O.3	Original	Original	sink
+N4.O.4	Original	Original	sink
+N4.O.5	Original	Original	sink
+N6.O.1	Original	Original	sink
+N6.O.2	Original	Original	sink
+N6.O.3	Original	Original	sink
+N6.O.4	Original	Original	sink
+N6.O.5	Original	Original	sink
+N0.Z.1	Root zone	Root zone	source
+N0.Z.2	Root zone	Root zone	source
+N0.Z.3	Root zone	Root zone	source
+N0.Z.4	Root zone	Root zone	source
+N0.Z.5	Root zone	Root zone	source
+N2.Z.1	Root zone	Root zone	source
+N2.Z.2	Root zone	Root zone	source
+N2.Z.3	Root zone	Root zone	source
+N2.Z.4	Root zone	Root zone	source
+N2.Z.5	Root zone	Root zone	source
+N4.Z.1	Root zone	Root zone	source
+N4.Z.2	Root zone	Root zone	source
+N4.Z.3	Root zone	Root zone	source
+N4.Z.4	Root zone	Root zone	source
+N4.Z.5	Root zone	Root zone	source
+N6.Z.1	Root zone	Root zone	source
+N6.Z.2	Root zone	Root zone	source
+N6.Z.3	Root zone	Root zone	source
+N6.Z.4	Root zone	Root zone	source
+N6.Z.5	Root zone	Root zone	source
+N0.RH.1	Rhizosphere	Rhizosphere	source
+N0.RH.2	Rhizosphere	Rhizosphere	source
+N0.RH.3	Rhizosphere	Rhizosphere	source
+N0.RH.4	Rhizosphere	Rhizosphere	source
+N0.RH.5	Rhizosphere	Rhizosphere	source
+N2.RH.1	Rhizosphere	Rhizosphere	source
+N2.RH.2	Rhizosphere	Rhizosphere	source
+N2.RH.3	Rhizosphere	Rhizosphere	source
+N2.RH.4	Rhizosphere	Rhizosphere	source
+N2.RH.5	Rhizosphere	Rhizosphere	source
+N4.RH.1	Rhizosphere	Rhizosphere	source
+N4.RH.2	Rhizosphere	Rhizosphere	source
+N4.RH.3	Rhizosphere	Rhizosphere	source
+N4.RH.4	Rhizosphere	Rhizosphere	source
+N4.RH.5	Rhizosphere	Rhizosphere	source
+N6.RH.1	Rhizosphere	Rhizosphere	source
+N6.RH.2	Rhizosphere	Rhizosphere	source
+N6.RH.3	Rhizosphere	Rhizosphere	source
+N6.RH.4	Rhizosphere	Rhizosphere	source
+N6.RH.5	Rhizosphere	Rhizosphere	source
+N0.RT.1	Root	Root	source
+N0.RT.2	Root	Root	source
+N0.RT.3	Root	Root	source
+N0.RT.4	Root	Root	source
+N0.RT.5	Root	Root	source
+N2.RT.1	Root	Root	source
+N2.RT.2	Root	Root	source
+N2.RT.3	Root	Root	source
+N2.RT.4	Root	Root	source
+N2.RT.5	Root	Root	source
+N4.RT.1	Root	Root	source
+N4.RT.2	Root	Root	source
+N4.RT.3	Root	Root	source
+N4.RT.4	Root	Root	source
+N4.RT.5	Root	Root	source
+N6.RT.1	Root	Root	source
+N6.RT.2	Root	Root	source
+N6.RT.3	Root	Root	source
+N6.RT.4	Root	Root	source
+N6.RT.5	Root	Root	source
+N0.N.1	Nodule	Nodule	source
+N0.N.2	Nodule	Nodule	source
+N0.N.3	Nodule	Nodule	source
+N0.N.4	Nodule	Nodule	source
+N0.N.5	Nodule	Nodule	source
+N2.N.1	Nodule	Nodule	source
+N2.N.2	Nodule	Nodule	source
+N2.N.3	Nodule	Nodule	source
+N2.N.4	Nodule	Nodule	source
+N2.N.5	Nodule	Nodule	source
+N4.N.1	Nodule	Nodule	source
+N4.N.2	Nodule	Nodule	source
+N4.N.3	Nodule	Nodule	source
+N4.N.4	Nodule	Nodule	source
+N4.N.5	Nodule	Nodule	source
+N6.N.1	Nodule	Nodule	source
+N6.N.2	Nodule	Nodule	source
+N6.N.3	Nodule	Nodule	source
+N6.N.4	Nodule	Nodule	source
+N6.N.5	Nodule	Nodule	source

@@ -1,0 +1,14 @@
+Genes,Functions,colors
+nifH,Nitrogen fixation,#FF7F50
+Anammox_Bacteria,Nitrification,#87CEEB
+hzsB,Nitrification,#87CEEB
+amoA_archaea,Nitrification,#87CEEB
+amoA_becteria,Nitrification,#87CEEB
+nxrA,Nitrification,#87CEEB
+comammoxA,Nitrification,#87CEEB
+napA,Denitrification,#DA70D6
+nirS,Denitrification,#DA70D6
+nirK,Denitrification,#DA70D6
+qnorB,Denitrification,#DA70D6
+nosZ,Denitrification,#DA70D6
+rRNA,Abundance,gray

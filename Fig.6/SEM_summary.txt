@@ -1,0 +1,69 @@
+
+Structural Equation Model of model 
+
+Call:
+  emf_deltaNutrition ~ richness_AMF + richness_RHI + Nitrogen + emf_Nitrification + emf_Denitrification + emf_Nfix
+  emf_Nitrification ~ richness_AMF + richness_RHI + Nitrogen + NicheSelc
+  emf_Denitrification ~ richness_AMF + richness_RHI + Nitrogen + NicheSelc
+  emf_Nfix ~ richness_AMF + richness_RHI + Nitrogen + NicheSelc
+  richness_AMF ~ Nitrogen + NicheSelc
+  richness_RHI ~ Nitrogen + NicheSelc
+
+    AIC
+ 2540.438
+
+---
+Tests of directed separation:
+
+                                 Independ.Claim Test.Type DF Crit.Value P.Value  
+           emf_deltaNutrition ~ NicheSelc + ...      coef 72     0.5880  0.5584  
+              richness_RHI ~ richness_AMF + ...      coef 76    -0.8573  0.3940  
+  emf_Denitrification ~ emf_Nitrification + ...      coef 74    -0.5345  0.5946  
+             emf_Nfix ~ emf_Nitrification + ...      coef 74    -0.1449  0.8852  
+           emf_Nfix ~ emf_Denitrification + ...      coef 74     2.0083  0.0483 *
+
+--
+Global goodness-of-fit:
+
+Chi-Squared = 5.708 with P-value = 0.336 and on 5 degrees of freedom
+Fisher's C = 10.374 with P-value = 0.408 and on 10 degrees of freedom
+
+---
+Coefficients:
+
+             Response           Predictor  Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+   emf_deltaNutrition        richness_AMF   -0.0003    0.0002 73    -1.2184  0.2270      -0.1361    
+   emf_deltaNutrition        richness_RHI    0.0005    0.0003 73     1.9172  0.0591       0.2578    
+   emf_deltaNutrition            Nitrogen   -0.0009    0.0002 73    -4.5419  0.0000      -0.4850 ***
+   emf_deltaNutrition   emf_Nitrification    0.1124    0.0964 73     1.1652  0.2477       0.1473    
+   emf_deltaNutrition emf_Denitrification    0.0582    0.0693 73     0.8396  0.4039       0.0893    
+   emf_deltaNutrition            emf_Nfix    0.1123    0.0499 73     2.2535  0.0272       0.2840   *
+    emf_Nitrification        richness_AMF   -0.0005    0.0003 75    -1.7884  0.0777      -0.1872    
+    emf_Nitrification        richness_RHI    0.0007    0.0002 75     2.9788  0.0039       0.2774  **
+    emf_Nitrification            Nitrogen    0.0000    0.0002 75    -0.2188  0.8274      -0.0181    
+    emf_Nitrification           NicheSelc   -0.3100    0.0529 75    -5.8658  0.0000      -0.6728 ***
+  emf_Denitrification        richness_AMF    0.0005    0.0005 75     1.1132  0.2692       0.1589    
+  emf_Denitrification        richness_RHI   -0.0002    0.0004 75    -0.3938  0.6948      -0.0500    
+  emf_Denitrification            Nitrogen    0.0001    0.0003 75     0.3629  0.7177       0.0410    
+  emf_Denitrification           NicheSelc   -0.1714    0.0844 75    -2.0311  0.0458      -0.3176   *
+             emf_Nfix        richness_AMF    0.0014    0.0006 75     2.2031  0.0307       0.2555   *
+             emf_Nfix        richness_RHI   -0.0018    0.0005 75    -3.5083  0.0008      -0.3620 ***
+             emf_Nfix            Nitrogen   -0.0005    0.0004 75    -1.1660  0.2473      -0.1070    
+             emf_Nfix           NicheSelc    0.4397    0.1129 75     3.8936  0.0002       0.4947 ***
+         richness_AMF            Nitrogen   -0.1509    0.0708 77    -2.1303  0.0363      -0.1793   *
+         richness_AMF           NicheSelc -109.3100   14.1620 77    -7.7185  0.0000      -0.6498 ***
+         richness_RHI            Nitrogen    0.2467    0.0831 77     2.9684  0.0040       0.2809  **
+         richness_RHI           NicheSelc  -84.4800   16.6219 77    -5.0825  0.0000      -0.4810 ***
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+             Response method R.squared
+   emf_deltaNutrition   none      0.30
+    emf_Nitrification   none      0.56
+  emf_Denitrification   none      0.17
+             emf_Nfix   none      0.45
+         richness_AMF   none      0.45
+         richness_RHI   none      0.31
