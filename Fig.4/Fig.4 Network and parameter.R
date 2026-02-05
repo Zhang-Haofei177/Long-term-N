@@ -197,6 +197,8 @@ p_Nitrogen_3
 library(patchwork)
 combined_plot <- (p_Nice_1 / p_Nice_2 / p_Nice_3) | 
   (p_Nitrogen_1 / p_Nitrogen_2 / p_Nitrogen_3)
-print(combined_plot)
-setwd("C:/Users/ADMIN/Desktop/Longterm N code/Fig.4/")
-ggsave(filename = "Network_parameter_plot.pdf", plot = combined_plot,device = "pdf", width = 5, height = 8, dpi = 300)
+combined_plot
+
+pdf("Network_parameter_plot.pdf", width = 5, height = 8)
+combined_plot
+dev.off()
