@@ -12,7 +12,7 @@ library(lme4)
 library(Matrix)
 library(dplyr)
 setwd("C:/Users/ADMIN/Desktop/Longterm N code/Fig.5/")
-gene<-read.csv("Nitrogen gene abundance.csv",
+gene<-read.csv("Nitrogen gene abundance(订正).csv",
                header = T,row.names = 1)
 env<-read.csv("env.csv",
               header = T,row.names = 1)
@@ -82,7 +82,7 @@ if("Niche2.P" %in% rownames(divs2)){
 write.csv(divs2,file = "Niche_LMM_result_FDR.csv")
 #################Nitrogen LMM##############################
 setwd("C:/Users/ADMIN/Desktop/Longterm N code/Fig.5/")
-gene<-read.csv("Nitrogen gene abundance.csv",
+gene<-read.csv("Nitrogen gene abundance(订正).csv",
                header = T,row.names = 1)
 env<-read.csv("env.csv",
               header = T,row.names = 1)

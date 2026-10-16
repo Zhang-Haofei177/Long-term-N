@@ -5,7 +5,7 @@ library(ggplot2)
 library(reshape2)
 library(psych)
 setwd("C:/Users/ADMIN/Desktop/Longterm N code/Fig.5/")
-gene<-read.csv("Nitrogen gene abundance.csv",
+gene<-read.csv("Nitrogen gene abundance(订正).csv",
                header = T,row.names = 1)
 env<-read.csv("env.csv",
               header = T,row.names = 1)
@@ -41,7 +41,7 @@ p <-
                                  P_value <= 0.01 & P_value > 0.001 ~ "**",
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -75,7 +75,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -109,7 +109,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -143,7 +143,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -166,7 +166,7 @@ library(ggplot2)
 library(reshape2)
 library(psych)
 setwd("C:/Users/ADMIN/Desktop/Longterm N code/Fig.5/")
-gene<-read.csv("Nitrogen gene abundance.csv",
+gene<-read.csv("Nitrogen gene abundance(订正).csv",
                header = T,row.names = 1)
 env<-read.csv("env.csv",
               header = T,row.names = 1)
@@ -201,7 +201,7 @@ p <-
                                  TRUE ~ NA_character_))
 
 
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -235,8 +235,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -270,8 +269,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -305,8 +303,7 @@ p <-
                                  P_value <= 0.001 ~ "***",
                                  TRUE ~ NA_character_))
 
-
-data <- cbind(r,p) %>% select(-(4:5))
+data <- cbind(r, p) %>% dplyr::select(-(4:5))
 head(data)
 
 data_r<-data[1:3]
@@ -322,3 +319,4 @@ total_p <- rbind(RZS_wide_p,RS_wide_p,RE_wide_p,NE_wide_p)
 total_p <- total_p[c("Genes","Nitrogen","Niche")]
 write.csv(total,"Gene Abundance_Nitrogen_Spearman r_FDR.csv")
 write.csv(total_p,"Gene Abundance_Nitrogen_Spearman p_FDR.csv")
+
